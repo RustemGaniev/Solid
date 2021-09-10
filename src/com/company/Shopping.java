@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Shopping {
+public class Shopping { //принцип единственной ответственности
 
     public ArrayList<Goods> shopping(ArrayList<Goods> goods) {
         while (true) {
@@ -35,7 +35,7 @@ public class Shopping {
                             System.out.println(" \n По ключевому слову " + inputCase + " найдены следующие товары: \n");
                             for (Goods g : goods) {
                                 if (g.name.regionMatches(0, inputCase, 0, inputCase.length()) == true ||
-                                        g.producer.regionMatches(0, inputCase, 0, inputCase.length()) == true) {
+                                        g.producer.regionMatches(0, inputCase, 0, inputCase.length()) == true) {// избегание магических чисел через length
                                     System.out.println(g + "\n");
                                 }
                             }
