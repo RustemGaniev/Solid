@@ -23,13 +23,13 @@ public class Order {
 
     public Order order(ArrayList<Goods> basket, int orderId, Scanner scanner) {
         System.out.println(" \n Введите имя, номер телефона на кого будет оформлен заказ и адрес доставки через Enter: \n");
-        String customerName = scanner.nextLine();
-        String customerPhone = scanner.nextLine();
-        String customerAddress = scanner.nextLine();
+        String customerName = scanner.next();
+        String customerPhone = scanner.next();
+        String customerAddress = scanner.next();
         Custumer custumer = new Custumer(customerName, customerPhone, customerAddress);
         for (Goods b : basket) {
-           orderPrice = orderPrice + b.price * b.count;
-           goodsCount = goodsCount + b.count;
+           orderPrice = b.price * b.count;
+           goodsCount =  b.count;
             }
         Order order = new Order(orderId, orderPrice, goodsCount, custumer);
         System.out.println(" \n Сформирован заказ: \n");
