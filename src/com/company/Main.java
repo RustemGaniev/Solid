@@ -17,11 +17,11 @@ public class Main {
         ArrayList<Goods> goods = new ArrayList<>();
         goods.add(new Goods(101, "Сахар мешок 10 кг", 10000,"Сахарный комбинат", 600, 100,Rating.Medium ));
         goods.add(new Goods(102, "Сахар мешок 5 кг", 10000,"Сахарный комбинат", 360, 100,Rating.VeryLow ));
-//        goods.add(new Goods(103, "Сахар мешок 100 кг", 10000,"Сахарный комбинат", 5009, 100,Rating.Low ));
-//        goods.add(new Goods(204, "Помидор ящик 20 кг", 1000, "Турция", 2000, 800, Rating.High));
-//        goods.add(new Goods(205, "Помидор ящик 20 кг", 1000, "Кубань", 1900, 800, Rating.VeryHigh));
-//        goods.add(new Goods(209, "Помидор ящик 200 кг", 1000, "Узбекистан", 20009, 800, Rating.Low));
-//        goods.add(new Goods(206, "Помидор ящик 10 кг", 1000, "Турция", 1000, 800, Rating.Medium));
+        goods.add(new Goods(103, "Сахар мешок 100 кг", 10000,"Сахарный комбинат", 5009, 100,Rating.Low ));
+        goods.add(new Goods(204, "Помидор ящик 20 кг", 1000, "Турция", 2000, 800, Rating.High));
+        goods.add(new Goods(205, "Помидор ящик 20 кг", 1000, "Кубань", 1900, 800, Rating.VeryHigh));
+        goods.add(new Goods(209, "Помидор ящик 200 кг", 1000, "Узбекистан", 20009, 800, Rating.Low));
+        goods.add(new Goods(206, "Помидор ящик 10 кг", 1000, "Турция", 1000, 800, Rating.Medium));
 
         Scanner scanner = new Scanner(System.in);
         System.out.println(" Добро пожаловать в наш магазин ! \n" +
