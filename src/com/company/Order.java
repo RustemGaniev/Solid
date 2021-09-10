@@ -9,9 +9,9 @@ public class Order {
     Double orderPrice;
     int goodsCount;
     Custumer custumer;
-    ArrayList<Goods> basket;
 
-    public Order(){};
+    public Order() {
+    }
 
     public Order(int orderId, Double orderPrice, int goodsCount, Custumer custumer) {
         this.goodsCount = goodsCount;
@@ -28,17 +28,18 @@ public class Order {
         String customerAddress = scanner.next();
         Custumer custumer = new Custumer(customerName, customerPhone, customerAddress);
         for (Goods b : basket) {
-           orderPrice = b.price * b.count;
-           goodsCount =  b.count;
-            }
+            orderPrice = b.price * b.count;
+            goodsCount = b.count;
+        }
         Order order = new Order(orderId, orderPrice, goodsCount, custumer);
         System.out.println(" \n Сформирован заказ: \n");
         System.out.println(order);
         return order;
 
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return " \n Номер заказа " + orderId + " \n" +
                 "Сумма заказа " + orderPrice
                 + "\n Количество позиций " + goodsCount +

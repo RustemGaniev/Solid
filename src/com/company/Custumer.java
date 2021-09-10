@@ -11,8 +11,9 @@ public class Custumer {
         this.address = address;
         this.phone = phone;
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return " \n Покупатель " + name + " \n" +
                 "Телефон : " + phone
                 + "\n Адрес доставки: " + address;
